@@ -4,11 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     //Global Variables
@@ -23,17 +21,34 @@ public class MainActivity extends AppCompatActivity {
     int homeScore = 0;
     int outCount = 0;
 
+    //Major text views
+    private TextView ballView;
+    private TextView strikeView;
+    private TextView outView;
+    private TableLayout tblLayout;
+    TextView tvHomeTotal;
+    TextView tvVisitorTotal;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        displayCounts();
-        updateCurrentInning();
+
+        ballView = (TextView) findViewById(R.id.tvBall);
+        strikeView = (TextView) findViewById(R.id.tvStrike);
+        outView = (TextView) findViewById(R.id.tvOut);
+        tblLayout = (TableLayout) findViewById(R.id.tableLayout);
+        tvHomeTotal = (TextView) findViewById(R.id.homeTotal);
+        tvVisitorTotal = (TextView) findViewById(R.id.visitorTotal);
+
         TextView tvHomeTotal = (TextView) findViewById(R.id.homeTotal);
         TextView tvVisitorTotal = (TextView) findViewById(R.id.visitorTotal);
         tvHomeTotal.setText(String.valueOf(homeScore));
         tvVisitorTotal.setText(String.valueOf(visitorScore));
+
+        displayCounts();
+        updateCurrentInning();
     }
 
     //onclick events for Strike, Ball, Foul Ball, Hit and Out
@@ -84,23 +99,30 @@ public class MainActivity extends AppCompatActivity {
         tvAtBat.setInputType(InputType.TYPE_CLASS_TEXT);
         tvAtBat.requestFocus(); //to trigger the soft input
     }
+
+    public void clickReset(View v){
+        zeroOutCounts();
+        currentInning = 1;
+        homeScore = 0;
+        visitorScore = 0;
+        inningScore = 0;
+        updateCurrentInning();
+        clearScoreBoard();
+        updateScoreTotal();
+    }
     /*Onclick for Home Base
     * For each click of Home Button add 1 to current Inning (1=top of 1st Visitor,
     * 2 = bottom of 1st Home)*/
 
     public void baseClicked(View v) {
-
-        updateScore();
-
+        updateInningScore();
     }
 
     //Display counts
     public void displayCounts() {
-        TextView ballView = (TextView) findViewById(R.id.tvBall);
-        TextView strikeView = (TextView) findViewById(R.id.tvStrike);
-        TextView outView = (TextView) findViewById(R.id.tvOut);
-
-
+//        TextView ballView = (TextView) findViewById(R.id.tvBall);
+//        TextView strikeView = (TextView) findViewById(R.id.tvStrike);
+//        TextView outView = (TextView) findViewById(R.id.tvOut);
         ballView.setText(String.valueOf(ballCount));
         strikeView.setText(String.valueOf(strikeCount));
         outView.setText(String.valueOf(outCount));
@@ -143,10 +165,6 @@ public class MainActivity extends AppCompatActivity {
 
     //Update Current Inning
     public void updateCurrentInning() {
-        //int currentRow = 1;
-        //int adjustedInning = 0;
-
-        TableLayout tblLayout = (TableLayout) findViewById(R.id.tableLayout);
 
         TableRow rowPrevious = (TableRow) tblLayout.getChildAt(currentHalf);
         TextView tvPrevious = (TextView) rowPrevious.getChildAt(adjustedInning);
@@ -178,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void updateScore() {
+    public void updateInningScore() {
 
         inningScore = inningScore + 1;
         if (currentHalf == 2) {
@@ -187,16 +205,32 @@ public class MainActivity extends AppCompatActivity {
             visitorScore = visitorScore + 1;
         }
         //get current row and half then update that currentInningScore
-        TableLayout tblLayout = (TableLayout) findViewById(R.id.tableLayout);
+//        TableLayout tblLayout = (TableLayout) findViewById(R.id.tableLayout);
         TableRow row = (TableRow) tblLayout.getChildAt(currentHalf);
         TextView tv = (TextView) row.getChildAt(adjustedInning);
         tv.setText(String.valueOf(inningScore));
+        updateScoreTotal();
 
-        TextView tvHomeTotal = (TextView) findViewById(R.id.homeTotal);
-        TextView tvVisitorTotal = (TextView) findViewById(R.id.visitorTotal);
+
+    }
+
+    public void clearScoreBoard(){
+        TableRow row;
+        TextView tv;
+        //start at row 1 and column 2
+        for (int i = 1; i <= 2; i++){
+            row = (TableRow) tblLayout.getChildAt(i);
+            for (int j = 1; j <= 9; j++){
+                tv = (TextView) row.getChildAt(j);
+                tv.setText("");
+            }
+        }
+
+    }
+
+    public void updateScoreTotal(){
         tvVisitorTotal.setText(String.valueOf(visitorScore));
         tvHomeTotal.setText(String.valueOf(homeScore));
-
     }
 
 }

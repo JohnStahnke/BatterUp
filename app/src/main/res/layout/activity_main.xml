@@ -6,8 +6,8 @@
     android:orientation="vertical"
     android:background="#32FBFF"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.batterup.MainActivity">
 
@@ -23,90 +23,49 @@
             android:background="@drawable/border">
 
             <TextView
+                style="@style/TextViewStyleTable"
                 android:layout_weight="2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/border"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="1"
-                android:textAlignment="center"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="2"
-                android:textAlignment="center"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="3"
-                android:textAlignment="center"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="4"
-                android:textAlignment="center"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="5"
-                android:textAlignment="center"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="6"
-                android:textAlignment="center"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="7"
-                android:textAlignment="center"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="8"
-                android:textAlignment="center"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="9"
-                android:textAlignment="center"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
                 android:layout_weight="2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="Total"
-                android:textAlignment="center"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
         </TableRow>
         <TableRow
@@ -114,92 +73,50 @@
             android:layout_height="match_parent"
             android:background="@drawable/border">
             <TextView
+                style="@style/TextViewStyleTable"
                 android:layout_weight="2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="Visitor"
-                android:textAlignment="center"
-                android:background="@drawable/border"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/topOfFirst"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/topOfSecond"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/topOfThird"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/topOfFourth"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/topOfFifth"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/topOfSixth"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/topOfSeventh"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/topOfEigth"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/topOfNinth"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
                 android:layout_weight="2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/visitorTotal"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
         </TableRow>
         <TableRow
@@ -207,93 +124,51 @@
             android:layout_height="match_parent"
             android:background="@drawable/border">
             <TextView
+                style="@style/TextViewStyleTable"
                 android:layout_weight="2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:text="Home"
-                android:textAlignment="center"
-                android:background="@drawable/border"
                 android:id="@+id/homeCell"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
-                android:background="@drawable/border"
                 android:id="@+id/bottomOfFirst"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/bottomOfSecond"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/bottomOfThird"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/bottomOfFourth"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/bottomOfFifth"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/bottomOfSixth"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/bottomOfSeventh"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/bottomOfEighth"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/bottomOfNinth"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
             <TextView
                 android:layout_weight="2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:id="@+id/homeTotal"
-                android:background="@drawable/border"
+                style="@style/TextViewStyleTable"
                 />
         </TableRow>
     </TableLayout>
@@ -304,35 +179,24 @@
         android:layout_height="wrap_content">
 
         <TextView
+            style="@style/TextViewStyleLinear"
             android:layout_weight="2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:text="AT BAT"
-            android:textAlignment="center"
             android:id="@+id/lblAtBat" />
 
         <TextView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:text="BALL"
-            android:textAlignment="center"
+            style="@style/TextViewStyleLinear"
             android:id="@+id/lblBall" />
 
         <TextView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:text="STRIKE"
-            android:textAlignment="center"
+            style="@style/TextViewStyleLinear"
             android:id="@+id/lblStrike" />
 
         <TextView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:text="OUT"
-            android:textAlignment="center"
+            style="@style/TextViewStyleLinear"
             android:id="@+id/lblOut" />
     </LinearLayout>
 
@@ -343,35 +207,20 @@
 
         <TextView
             android:layout_weight="2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
             android:onClick="clickAtBat"
-            android:textAlignment="center"
+            style="@style/TextViewStyleStats"
             android:id="@+id/tvAtBat" />
 
         <TextView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:textAlignment="center"
+            style="@style/TextViewStyleStats"
             android:id="@+id/tvBall" />
 
         <TextView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:textAlignment="center"
+            style="@style/TextViewStyleStats"
             android:id="@+id/tvStrike" />
 
         <TextView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:textAlignment="center"
+            style="@style/TextViewStyleStats"
             android:id="@+id/tvOut" />
 
     </LinearLayout>
@@ -388,32 +237,23 @@
             android:background="@drawable/baseballfield" />
         <!--2nd base-->
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
             android:layout_marginTop="36dp"
-            android:button="@drawable/checkbox"
+            style="@style/BasesStyle"
             android:id="@+id/chkbxSecondBase" />
         <!--3rd base-->
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
             android:layout_marginTop="32dp"
-            android:layout_centerInParent="true"
             android:layout_alignParentLeft="true"
-            android:button="@drawable/checkbox"
+            style="@style/BasesStyle"
             android:id="@+id/chkbxThirdBase" />
         <!--1st base-->
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_centerInParent="true"
             android:layout_marginRight="45dp"
             android:layout_marginTop="32dp"
-            android:button="@drawable/checkbox"
+            style="@style/BasesStyle"
             android:id="@+id/chkbxFirstBase" />
         <!--Home-->
         <Button
@@ -429,16 +269,16 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="8dp">
 
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:text="Strike"
-            android:textSize="12dp"
+            android:textSize="11sp"
             android:onClick="clickStrike"
             android:id="@+id/buttonStrike" />
 
@@ -456,7 +296,7 @@
             android:layout_height="match_parent"
             android:onClick="clickFoulBall"
             android:text="Foul Ball"
-            android:textSize="12dp"
+            android:textSize="10sp"
             android:id="@+id/buttonFoulBall" />
 
         <Button
@@ -474,5 +314,15 @@
             android:onClick="clickOut"
             android:text="Out"
             android:id="@+id/buttonOut" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:onClick="clickReset"
+            android:textSize="10sp"
+            android:text="Reset"
+            android:id="@+id/buttonReset" />
+
     </LinearLayout>
 </LinearLayout>
